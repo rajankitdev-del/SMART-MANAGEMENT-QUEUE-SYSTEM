@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Queue Seva - Feedback</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#93f7ba",
+                    "primary": "#0047a9",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-surface-variant": "#424654",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ebeef3",
+                    "outline": "#737785",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "secondary": "#8f4e00",
+                    "inverse-on-surface": "#eef1f6",
+                    "tertiary-container": "#007445",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#d7dadf",
+                    "on-primary-container": "#dae2ff",
+                    "on-primary-fixed-variant": "#00419d",
+                    "on-surface": "#181c20",
+                    "primary-fixed": "#d9e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b5ed7",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "outline-variant": "#c2c6d6",
+                    "surface-tint": "#0057cc",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b0c6ff",
+                    "surface-container-high": "#e5e8ee",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#93f7ba",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f1f4f9",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fe9832",
+                    "inverse-primary": "#b0c6ff",
+                    "surface": "#f7f9ff",
+                    "surface-variant": "#e0e3e8",
+                    "tertiary-fixed-dim": "#77da9f",
+                    "on-background": "#181c20",
+                    "on-secondary-container": "#683700",
+                    "on-tertiary-fixed-variant": "#00522f",
+                    "surface-container-highest": "#e0e3e8",
+                    "tertiary": "#005934",
+                    "on-primary-fixed": "#001945",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed": "#002110",
+                    "surface-bright": "#f7f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #198754 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body text-on-surface pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-4 h-16 bg-blue-700 dark:bg-blue-900">
+<button class="mr-4 text-white hover:bg-blue-800 dark:hover:bg-blue-700 scale-95 duration-150 ease-in-out p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-white dark:text-blue-100 font-['Inter'] font-bold text-2xl tracking-tight">Queue Seva</h1>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Editorial Header -->
+<div class="mb-12 mt-4">
+<h2 class="text-[2rem] font-headline font-extrabold leading-[1.2] text-primary tracking-tight">How was your experience today?</h2>
+<p class="text-on-surface-variant mt-2 font-medium bg-white/30 backdrop-blur-sm inline-block px-1 rounded">Your feedback helps us build a more efficient digital infrastructure for every citizen.</p>
+</div>
+<!-- Feedback Card Container -->
+<div class="space-y-8">
+<!-- Rating Section -->
+<section class="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-md border border-outline-variant/30">
+<label class="block text-secondary font-bold text-sm tracking-widest uppercase mb-6">Star Rating</label>
+<div class="flex justify-between items-center max-w-sm">
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-surface-variant cursor-pointer" data-icon="star">star</span>
+</div>
+</section>
+<!-- Tags Section -->
+<section class="space-y-4">
+<label class="block text-secondary font-bold text-sm tracking-widest uppercase ml-1">What worked well?</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-4 bg-white/95 backdrop-blur-sm text-on-surface border border-outline-variant/30 rounded-xl font-semibold hover:bg-secondary-fixed transition-colors shadow-sm">
+                        Ease of use
+                    </button>
+<button class="px-6 py-4 bg-white/95 backdrop-blur-sm text-on-surface border border-outline-variant/30 rounded-xl font-semibold hover:bg-secondary-fixed transition-colors shadow-sm">
+                        Clear alerts
+                    </button>
+<button class="px-6 py-4 bg-white/95 backdrop-blur-sm text-on-surface border border-outline-variant/30 rounded-xl font-semibold hover:bg-secondary-fixed transition-colors shadow-sm">
+                        Helpful staff
+                    </button>
+</div>
+</section>
+<!-- Comment Box -->
+<section class="space-y-4">
+<label class="block text-secondary font-bold text-sm tracking-widest uppercase ml-1">Additional details</label>
+<div class="relative">
+<textarea class="w-full h-40 bg-white/95 backdrop-blur-sm border-outline-variant/30 rounded-xl p-6 text-on-surface focus:ring-2 focus:ring-primary placeholder:text-outline-variant text-lg shadow-sm" placeholder="Tell us more about your visit..."></textarea>
+</div>
+</section>
+<!-- Submit Action -->
+<div class="pt-6">
+<button class="w-full h-14 bg-primary-container text-white font-bold text-lg rounded-xl shadow-lg active:scale-[0.98] transition-all">
+                    Submit Feedback
+                </button>
+</div>
+</div>
+<!-- Decorative Illustration Element -->
+<div class="mt-16 flex justify-center">
+<img alt="Professional civic service illustration" class="w-48 h-48 object-cover rounded-full mix-blend-multiply opacity-40 grayscale" data-alt="Abstract minimalist illustration of hands holding a star with soft blue and saffron background tones in a clean digital style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6mP5CSlT1qyJSxXIMl-y-QFpRagy2ovjH15Pebo_ey14taiunnvwsUirgyj5kzAotPtYs4xh1xNpZecO3Nx1fbGV0UQOXp1o2tJm3aZDmMYOamnczKysy_o-px0envJ9UsVgPOoFSv4MKV5UfuwEEoCrK8_MvgR00FOzeqpRjeOMot7uJvKfkC8m8RytWfFSEeNjzpURWlVdPNPTVG6LaJ57s0kl7UwRvXw8CZ0M-UXQbufI5bDoe9LnuOB4P56m5gLLAk2UwJw"/>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-2 bg-blue-700 dark:bg-blue-900 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors scale-98 active:opacity-90" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors scale-98 active:opacity-90" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">My Token</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors scale-98 active:opacity-90" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-white/10 text-white rounded-xl py-2 px-4 scale-98 active:opacity-90" href="#">
+<span class="material-symbols-outlined" data-icon="help_center">help_center</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Help</span>
+</a>
+</nav>
+</body></html>

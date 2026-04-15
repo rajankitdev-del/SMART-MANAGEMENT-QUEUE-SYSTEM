@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Noto+Sans+Devanagari:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#93f7ba",
+                    "primary": "#0047a9",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-surface-variant": "#424654",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ebeef3",
+                    "outline": "#737785",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "secondary": "#8f4e00",
+                    "inverse-on-surface": "#eef1f6",
+                    "tertiary-container": "#007445",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#d7dadf",
+                    "on-primary-container": "#dae2ff",
+                    "on-primary-fixed-variant": "#00419d",
+                    "on-surface": "#181c20",
+                    "primary-fixed": "#d9e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b5ed7",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "outline-variant": "#c2c6d6",
+                    "surface-tint": "#0057cc",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b0c6ff",
+                    "surface-container-high": "#e5e8ee",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#93f7ba",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f1f4f9",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fe9832",
+                    "inverse-primary": "#b0c6ff",
+                    "surface": "#f7f9ff",
+                    "surface-variant": "#e0e3e8",
+                    "tertiary-fixed-dim": "#77da9f",
+                    "on-background": "#181c20",
+                    "on-secondary-container": "#683700",
+                    "on-tertiary-fixed-variant": "#00522f",
+                    "surface-container-highest": "#e0e3e8",
+                    "tertiary": "#005934",
+                    "on-primary-fixed": "#001945",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed": "#002110",
+                    "surface-bright": "#f7f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #198754 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    </style>
+</head>
+<body class="font-body text-on-background">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-4 h-16 bg-blue-700 dark:bg-blue-900 shadow-md">
+<button class="p-2 mr-2 text-blue-200 hover:bg-blue-800 dark:hover:bg-blue-700 rounded-full transition-transform active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-white" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-white dark:text-blue-100 font-['Inter'] font-bold text-2xl tracking-tight">Priority Help</h1>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="mb-6">
+<span class="inline-block px-3 py-1 rounded-full bg-white/40 backdrop-blur-sm border border-secondary-fixed-dim/30 text-on-secondary-fixed-variant font-label text-xs font-bold tracking-widest mb-4">INCLUSIVE CARE</span>
+<h2 class="text-on-surface font-headline font-black text-4xl leading-tight tracking-tight mb-4">
+                Special Assistance
+            </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md bg-white/20 backdrop-blur-xs rounded-lg">
+                We provide special care for those who need it. Select an option to notify the staff.
+            </p>
+</div>
+<div class="h-48 w-full rounded-xl overflow-hidden mb-12 shadow-lg border-2 border-white/50">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-95" data-alt="Close up of a supportive handshake between a healthcare professional and an elderly person with warm natural lighting and soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1VucuDSdrasr7LmM0zz079HqiOvUtDiStsWNFiO4_5yibztHq92eaB3xm8ZEtYOu1ycd29Wtb17R6hQ24n1JibD0gljc7-1RvHoOip62KsWAPuycnIHpQqRwVJu1VDlNurj7ks38KeK-x4lhyWJ06FucrsbFCKLIDniR6TrKEDkHA2Hv68op8MFqlCUV7oL9LyUl80p4o9YZ5_ZaLxndOC06m_BtvEqN4_lRcNAA5-bRK9ZAYid4ubVViTUGz8o5vpsCBanG0QQ"/>
+</div>
+</section>
+<!-- Priority Action Buttons - Asymmetric Layout -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Option 1: Elderly -->
+<button class="group flex items-center p-6 bg-white/90 backdrop-blur-sm rounded-xl border border-outline-variant/30 text-left transition-all active:scale-[0.98] shadow-sm hover:shadow-md">
+<div class="flex-shrink-0 w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mr-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="elderly">elderly</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-on-surface font-headline font-bold text-xl mb-1">Elderly Citizen Support</h3>
+<p class="text-on-surface-variant text-sm">Assistance for senior citizens above 60 years</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant ml-4" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Option 2: Specially Abled -->
+<button class="group flex items-center p-6 bg-white/90 backdrop-blur-sm rounded-xl border border-outline-variant/30 text-left transition-all active:scale-[0.98] shadow-sm hover:shadow-md">
+<div class="flex-shrink-0 w-16 h-16 bg-secondary-fixed rounded-xl flex items-center justify-center mr-6 group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white" data-icon="accessible">accessible</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-on-surface font-headline font-bold text-xl mb-1">Specially Abled Assistance</h3>
+<p class="text-on-surface-variant text-sm">Help for persons with physical challenges</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant ml-4" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Option 3: Urgent Medical -->
+<button class="group flex items-center p-6 bg-white/90 backdrop-blur-sm rounded-xl border border-outline-variant/30 text-left transition-all active:scale-[0.98] shadow-sm hover:shadow-md">
+<div class="flex-shrink-0 w-16 h-16 bg-tertiary-fixed rounded-xl flex items-center justify-center mr-6 group-hover:bg-tertiary transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl group-hover:text-white" data-icon="emergency_hospital">emergency</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-on-surface font-headline font-bold text-xl mb-1">Urgent Medical Need</h3>
+<p class="text-on-surface-variant text-sm">Immediate help for medical emergencies</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant ml-4" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Informational Note -->
+<div class="mt-12 p-6 bg-white/80 backdrop-blur-sm rounded-xl border border-dashed border-outline-variant/50 text-center shadow-sm">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="info">info</span>
+<p class="text-on-surface-variant text-sm font-medium leading-relaxed">
+            By selecting an option, an alert is sent to the floor supervisor. Please wait for a few moments as we prioritize your request.
+        </p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-2 bg-blue-700 dark:bg-blue-900 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">My Token</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="insights">insights</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-white/10 text-white rounded-xl py-2 px-4 scale-98 transition-colors active:opacity-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="help_center">help_center</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider">Help</span>
+</a>
+</nav>
+</body></html>

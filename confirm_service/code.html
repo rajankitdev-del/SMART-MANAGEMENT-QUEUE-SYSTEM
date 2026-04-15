@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Noto+Sans+Devanagari:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#93f7ba",
+                    "primary": "#0047a9",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-surface-variant": "#424654",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ebeef3",
+                    "outline": "#737785",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "secondary": "#8f4e00",
+                    "inverse-on-surface": "#eef1f6",
+                    "tertiary-container": "#007445",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#d7dadf",
+                    "on-primary-container": "#dae2ff",
+                    "on-primary-fixed-variant": "#00419d",
+                    "on-surface": "#181c20",
+                    "primary-fixed": "#d9e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b5ed7",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "outline-variant": "#c2c6d6",
+                    "surface-tint": "#0057cc",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b0c6ff",
+                    "surface-container-high": "#e5e8ee",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#93f7ba",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f1f4f9",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fe9832",
+                    "inverse-primary": "#b0c6ff",
+                    "surface": "#f7f9ff",
+                    "surface-variant": "#e0e3e8",
+                    "tertiary-fixed-dim": "#77da9f",
+                    "on-background": "#181c20",
+                    "on-secondary-container": "#683700",
+                    "on-tertiary-fixed-variant": "#00522f",
+                    "surface-container-highest": "#e0e3e8",
+                    "tertiary": "#005934",
+                    "on-primary-fixed": "#001945",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed": "#002110",
+                    "surface-bright": "#f7f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #198754 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-background font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-4 h-16 bg-blue-700 dark:bg-blue-900 shadow-md">
+<button class="mr-4 text-white hover:bg-blue-800 p-2 rounded-lg transition-all duration-150 ease-in-out active:scale-95">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-white font-['Inter'] font-bold text-2xl tracking-tight">Queue Seva</h1>
+</header>
+<main class="flex-grow pt-24 pb-32 px-6 max-w-2xl mx-auto w-full">
+<!-- Editorial Header -->
+<header class="mt-8 mb-12">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block bg-white/40 backdrop-blur-xs inline-block px-2 py-0.5 rounded">Step 2 of 2</span>
+<h2 class="text-on-surface font-headline font-black text-4xl leading-[1.2] tracking-tight">Confirm Your Service</h2>
+<p class="text-on-surface-variant text-lg mt-4 max-w-md font-medium">Please review the details below to ensure your position in the digital queue.</p>
+</header>
+<!-- Summary Card -->
+<div class="space-y-6">
+<div class="bg-white/95 backdrop-blur-sm border border-outline-variant/15 rounded-xl overflow-hidden shadow-sm">
+<!-- Image Header -->
+<div class="h-40 w-full bg-surface-container-highest relative overflow-hidden">
+<img alt="Civil Hospital Entrance" class="w-full h-full object-cover opacity-80" data-alt="clean modern hospital entrance hall with large glass windows and professional medical signage in daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxEaFmllvkTC-AMFIoNaVmpfv5L3lqhrK74imquTQa87gJAOkEoDLCzMXeIcW9MDtsnCE-9gMOzd5gzTJK2oQ_WVe5S0yZS6XLCJJ8Txap7_fSBI8HbCm8WCHttWtvj_IcERvJKivyBxj6iMHrOkqH072Mz2A8jtYuxqU0eLgGZHg7RyO64ZPAFoEeCTedo_FDeF5seMo0UOYlPOh6XS8AUixFslzF98OgpOW85b0vOfBYxL9-ZnM5784Y-2kcHaNeS9s0y7XEIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<span class="bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Verified Location</span>
+</div>
+</div>
+<!-- Content Body -->
+<div class="p-8 space-y-8">
+<!-- Location -->
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mb-1">Location</p>
+<p class="text-on-surface font-bold text-xl leading-tight">Civil Hospital, Desk A</p>
+</div>
+</div>
+<!-- Service -->
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="medical_services">medical_services</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mb-1">Service Type</p>
+<p class="text-on-surface font-bold text-xl leading-tight">General Consultation</p>
+</div>
+</div>
+<!-- Wait Time Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<p class="text-on-surface-variant text-sm font-semibold">Estimated Wait</p>
+</div>
+<p class="text-primary font-black text-3xl">~20 <span class="text-lg font-bold">mins</span></p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+<p class="text-on-surface-variant text-sm font-semibold">Queue Size</p>
+</div>
+<p class="text-secondary font-black text-3xl">9 <span class="text-lg font-bold">ahead</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Transparency Disclaimer -->
+<div class="flex gap-4 p-4 items-start bg-white/90 backdrop-blur-sm border border-tertiary/20 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="info">info</span>
+<p class="text-on-surface text-sm leading-relaxed font-medium">
+                    Token will be valid for 4 hours. You will receive a SMS notification when there are 3 people ahead of you.
+                </p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-12 flex flex-col gap-4">
+<button class="w-full bg-primary-container text-white font-bold h-14 rounded-lg shadow-lg hover:bg-primary transition-colors active:scale-95 duration-150">
+                Confirm and Generate Token
+            </button>
+<button class="w-full text-on-surface-variant font-bold h-14 rounded-lg bg-white/80 hover:bg-white hover:text-on-surface transition-colors active:scale-95 duration-150 shadow-sm border border-outline-variant/20">
+                Go Back
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-2 bg-blue-700 dark:bg-blue-900 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
+<div class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90 scale-98">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-white/10 text-white rounded-xl py-2 px-4 hover:text-white transition-colors active:opacity-90 scale-98">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider mt-1">My Token</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90 scale-98">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider mt-1">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-200 py-2 hover:text-white transition-colors active:opacity-90 scale-98">
+<span class="material-symbols-outlined" data-icon="help_center">help_center</span>
+<span class="font-['Inter'] text-[12px] font-semibold uppercase tracking-wider mt-1">Help</span>
+</div>
+</nav>
+</body></html>

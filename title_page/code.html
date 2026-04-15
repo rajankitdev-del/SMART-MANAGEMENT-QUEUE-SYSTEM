@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Noto+Sans+Devanagari:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#93f7ba",
+                    "primary": "#0047a9",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-surface-variant": "#424654",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ebeef3",
+                    "outline": "#737785",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "secondary": "#8f4e00",
+                    "inverse-on-surface": "#eef1f6",
+                    "tertiary-container": "#007445",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#d7dadf",
+                    "on-primary-container": "#dae2ff",
+                    "on-primary-fixed-variant": "#00419d",
+                    "on-surface": "#181c20",
+                    "primary-fixed": "#d9e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b5ed7",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "outline-variant": "#c2c6d6",
+                    "surface-tint": "#0057cc",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b0c6ff",
+                    "surface-container-high": "#e5e8ee",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#93f7ba",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f1f4f9",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fe9832",
+                    "inverse-primary": "#b0c6ff",
+                    "surface": "#f7f9ff",
+                    "surface-variant": "#e0e3e8",
+                    "tertiary-fixed-dim": "#77da9f",
+                    "on-background": "#181c20",
+                    "on-secondary-container": "#683700",
+                    "on-tertiary-fixed-variant": "#00522f",
+                    "surface-container-highest": "#e0e3e8",
+                    "tertiary": "#005934",
+                    "on-primary-fixed": "#001945",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed": "#002110",
+                    "surface-bright": "#f7f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "Noto Sans Devanagari"],
+                    "body": ["Inter", "Noto Sans Devanagari"],
+                    "label": ["Inter", "Noto Sans Devanagari"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .scrim-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.1) 100%);
+        }
+        .tricolor-bg {
+            background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #198754 100%);
+            background-attachment: fixed;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    </style>
+</head>
+<body class="tricolor-bg font-body text-on-background min-h-screen overflow-x-hidden">
+<!-- Hero Title Page Section -->
+<main class="relative min-h-screen flex flex-col justify-end w-full overflow-hidden">
+<!-- Background Image with Descriptive Prompt - Reduced opacity to show tricolor -->
+<div class="absolute inset-0 z-0">
+<img alt="Indian citizens efficiently managing queues" class="w-full h-full object-cover object-center mix-blend-multiply opacity-30" data-alt="Vibrant illustration of diverse Indian citizens using mobile phones to wait in digital queues near modern government service centers with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqHb_7XlulMONWxZFLH4mDtOYqd9uRZGRgRjt4NFIhH2lv14jSYKhbxhbIwkym5CviL1uWrBJ9pXm43GUSOAgd7iXPAvcAT86dDhCUoMayYMPLjnY1NefCRlrMe7cxB3LQLRQmJjt8O8mewSMYtBJKAj-epZTLYxn14vdjaK-bZ06GVMDu3MdukdVUzngp2oRJQKcZ4m3v6I8QYz4sOc6zy1zKOf-J-q9Ex3873HtwlkASM4UOyIdIUF0Ntq3U81DMbZrUJGiiHQ"/>
+<div class="absolute inset-0 scrim-overlay z-10"></div>
+</div>
+<!-- Content Overlay -->
+<div class="relative z-20 w-full px-6 pb-16 md:pb-24 max-w-4xl mx-auto md:mx-0 md:pl-20">
+<!-- Branding Header -->
+<div class="mb-8 animate-fade-in">
+<h1 class="font-headline font-black text-6xl md:text-8xl text-white tracking-tighter editorial-shadow leading-none">
+                    Queue Seva
+                </h1>
+<div class="h-2 w-24 bg-secondary-container mt-4 rounded-full"></div>
+</div>
+<!-- Subtitle -->
+<div class="mb-12 max-w-lg">
+<p class="text-white text-xl md:text-2xl font-medium leading-relaxed opacity-95 editorial-shadow">
+                    Queue without standing in line - Smart queue service for everyone.
+                </p>
+<p class="text-blue-100/90 text-lg mt-2 font-semibold">
+                    डिजिटल लाइन में लगें, अपना समय बचाएं।
+                </p>
+</div>
+<!-- Primary and Secondary Actions -->
+<div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+<!-- Primary Action -->
+<button class="bg-primary-container text-white px-10 py-5 rounded-lg font-bold text-lg flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-transform duration-150 group">
+                    Get Started
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Secondary Action -->
+<button class="bg-black/40 backdrop-blur-md border border-white/20 text-white px-8 py-5 rounded-lg font-semibold text-lg flex items-center justify-center gap-3 hover:bg-black/50 transition-all duration-300">
+<span class="material-symbols-outlined">translate</span>
+                    Change Language
+                </button>
+</div>
+</div>
+<!-- Bottom Informational Bar -->
+<div class="relative z-20 w-full px-6 py-6 md:px-20 flex flex-wrap gap-8 items-center text-white text-sm border-t border-white/20 bg-black/40 backdrop-blur-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-medium">Government Authorized</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-medium">2M+ Active Users</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">speed</span>
+<span class="font-medium">Wait-time reduction: 70%</span>
+</div>
+</div>
+</main>
+<!-- Side Decoration (Editorial Line) -->
+<div class="fixed left-0 top-0 bottom-0 w-1 bg-secondary-container/30 z-30 hidden md:block"></div>
+</body></html>
