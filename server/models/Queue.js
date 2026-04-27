@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const QueueSchema = new mongoose.Schema({
-  queueName: String,
+  name: String,
   location: String,
   createdAt: {
     type: Date,
