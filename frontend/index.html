@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Queue Seva</title>
+</head>
+
+<body>
+
+<h2>Queue List</h2>
+
+<ul id="list"></ul>
+
+<script>
+async function loadQueue() {
+
+  const queueId = "69f1c3d110c74abbd2e8ab48";
+
+  const res = await fetch(`http://localhost:5000/queue/${queueId}/position`);
+  const data = await res.json();
+
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  data.forEach(item => {
+    const li = document.createElement("li");
+    li.innerText = "Token " + item.tokenNumber + " - " + item.user + " (Wait: " + item.waitTime + " min)";
+    list.appendChild(li);
+  });
+}
+
+loadQueue();
+</script>
+
+</body>
+</html>
