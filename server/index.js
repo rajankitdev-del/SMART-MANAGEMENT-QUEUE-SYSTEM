@@ -6,6 +6,7 @@ require("dotenv").config();
 const Token = require("./models/Token");
 const User = require("./models/User");
 const Queue = require("./models/Queue");
+const tokenSchema = require("./validateToken");
 
 const app = express();
 
@@ -137,6 +138,13 @@ app.get("/token/:id/serve", async (req, res) => {
 // ✅ Add new token (JOIN QUEUE)
 app.post("/token", async (req, res) => {
   try {
+    const { error } = tokenSchema.validate(req.body);
+
+if (error) {
+  return res.status(400).json({
+    error: error.details[0].message
+  });
+}
     const { userId, queueId } = req.body;
 
     // 👉 find last token number in this queue
@@ -163,6 +171,68 @@ app.post("/token", async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+// ✅ Create Queue
+app.post("/queue", async (req, res) => {
+  try {
+    const queue = new Queue(req.body);
+
+    await queue.save();
+
+    res.json({
+      message: "Queue created",
+      queue
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+app.post("/user", async (req, res) => {
+    try {
+        const user = new User(req.body);
+        await user.save();
+
+        res.status(201).json({
+            message: "User created",
+            user
+        });
+    } catch (err) {
+        res.status(500).json({
+            error: err.message
+        });
+    }
+});
+app.post("/token", async (req, res) => {
+    try {
+        const token = new Token(req.body);
+
+        await token.save();
+
+        res.status(201).json({
+            message: "Token created",
+            token
+        });
+
+    } catch (err) {
+        res.status(500).json({
+            error: err.message
+        });
+    }
+});
+app.get("/users", async (req, res) => {
+    const users = await User.find();
+    res.json(users);
+});
+
+app.get("/queues", async (req, res) => {
+    const queues = await Queue.find();
+    res.json(queues);
+});
+
+app.get("/tokens", async (req, res) => {
+    const tokens = await Token.find();
+    res.json(tokens);
 });
 // ✅ Start server (ALWAYS LAST)
 app.listen(5000, () => {
